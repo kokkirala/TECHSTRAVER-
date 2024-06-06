@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Healthcare Bot</title>
+</head>
+<body>
+    <h1>AI Healthcare Bot</h1>
+    <form action="/ask" method="post">
+        <label for="question">Ask a medical question:</label><br><br>
+        <input type="text" id="question" name="question"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    {% if answer %}
+        <p>Answer: {{ answer }}</p>
+    {% endif %}
+    <hr>
+    <form action="/schedule" method="post">
+        <label for="appointment">Schedule an appointment:</label><br><br>
+        <input type="text" id="appointment" name="appointment"><br><br>
+        <input type="submit" value="Schedule">
+    </form>
+    <br>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

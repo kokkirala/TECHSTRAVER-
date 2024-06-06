@@ -1,0 +1,18 @@
+#pip install flask transformers
+
+#pip install torch
+
+#pip install tensorflow
+
+#pip install --upgrade transformers
+
+
+#healthcare_bot/
+├── app.py
+├── requirements.txt
+└── templates/
+    └── index.html
+
+#python app.py
+
+# Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
